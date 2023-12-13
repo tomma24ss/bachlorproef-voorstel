@@ -3,38 +3,20 @@
 \section{Introductie}%
 \label{sec:introductie}
 
-Waarover zal je bachelorproef gaan? Introduceer het thema en zorg dat volgende zaken zeker duidelijk aanwezig zijn:
-
-\begin{itemize}
-  \item kaderen thema
-  \item de doelgroep
-  \item de probleemstelling en (centrale) onderzoeksvraag
-  \item de onderzoeksdoelstelling
-\end{itemize}
-
-Denk er aan: een typische bachelorproef is \textit{toegepast onderzoek}, wat betekent dat je start vanuit een concrete probleemsituatie in bedrijfscontext, een \textbf{casus}. Het is belangrijk om je onderwerp goed af te bakenen: je gaat voor die \textit{ene specifieke probleemsituatie} op zoek naar een goede oplossing, op basis van de huidige kennis in het vakgebied.
-
-De doelgroep moet ook concreet en duidelijk zijn, dus geen algemene of vaag gedefinieerde groepen zoals \emph{bedrijven}, \emph{developers}, \emph{Vlamingen}, enz. Je richt je in elk geval op it-professionals, een bachelorproef is geen populariserende tekst. Eén specifiek bedrijf (die te maken hebben met een concrete probleemsituatie) is dus beter dan \emph{bedrijven} in het algemeen.
-
-Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
-
-Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
+Deze bachelorproef verkent de mogelijkheden van geavanceerde technologieën voor het volgen en begrijpen van het gedrag van koeien. De noodzaak van nauwkeurige tracking en gedragsidentificatie in de veehouderij is cruciaal voor zowel dierenwelzijn als operationele efficiëntie. Het onderzoek focust op het analyseren van verschillende technologische methoden, zoals objectdetectie en diepteschatting, om koeien te lokaliseren en hun gedragingen zoals grazen, wandelen en rusten te identificeren. Het doel is om de uitdagingen en kansen van deze technologieën in de praktijk te onderzoeken en te demonstreren hoe ze bijdragen aan verbeterde veehouderijpraktijken.
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{State-of-the-art}%
 \label{sec:state-of-the-art}
 
-Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
+In de hedendaagse veehouderij is technologie cruciaal voor het volgen van koeien en het analyseren van hun gedrag. GPS- en RFID-technologieën worden vaak gebruikt voor basis tracking van vee. Studies zoals 'Advances in GPS Tracking Technology for Large Livestock Management' hebben de effectiviteit van GPS-systemen benadrukt, terwijl 'RFID in Animal Tracking: Applications and Innovations' de rol van RFID-tags in het volgen van vee onderzoekt.
 
-Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
+Recentere ontwikkelingen in computer vision en deep learning hebben geleid tot geavanceerdere methoden. Het artikel 'Multi-Feature Tracking Algorithms for Real-time Cattle Monitoring' in Scientific Reports beschrijft een systeem dat deep learning en computervisie combineert om koeien in real-time te volgen in stalomgevingen. Dit toont aan dat geavanceerde technologieën zoals objectdetectie en keypoints-analyse, die verder worden onderzocht in 'Deep Learning in Livestock Behavior Analysis: Trends and Challenges', aanzienlijke mogelijkheden bieden voor gedetailleerde gedragsanalyse.
 
-Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
+Diepteschattingstechnieken, besproken in '3D Imaging and Analysis in Livestock Monitoring Systems', voegen een extra laag van precisie toe aan het volgen van koeien. Echter, zoals onderzocht in 'Challenges in Livestock Monitoring: From Traditional to Advanced Technologies', zijn er uitdagingen, zoals het identificeren van gedrag onder verschillende omgevingscondities.
 
-Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
-
-Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
-
+Dit onderzoek bouwt voort op deze bevindingen door de mogelijkheden van geïntegreerde systemen te onderzoeken die zowel de locatie als het gedrag van koeien in diverse situaties kunnen volgen, een gebied dat tot nu toe onderbelicht is in de literatuur.
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
 % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
 %   geen onderdeel is van de zin.
@@ -42,31 +24,62 @@ Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle no
 %   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
 %   ...'')
 
-Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur van de tekst kan verduidelijken.
-
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
 \label{sec:methodologie}
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
-
-Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
-
-Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
-
-Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
-
-Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
-
-Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
-
+\subsection{Literatuurstudie}
+\begin{itemize}
+  \item \textbf{Doel:} Een grondige review van relevante literatuur om bestaande technieken en uitdagingen in vee tracking te begrijpen.
+  \item \textbf{Aanpak:} Analyse van literatuur over GPS, RFID, computervisie en deep learning.
+  \item \textbf{Deliverable:} Een literatuuroverzicht dat de experimentele aanpak ondersteunt.
+\end{itemize}
+\subsection{Datacollectie}
+\begin{itemize}
+  \item \textbf{Doel:} Verzamelen van real-time data van koeiengedrag onder verschillende omstandigheden via camera's en sensoren op een ILVO boerderij.
+  \item \textbf{Aanpak:} Implementatie van high-definition camera's en sensoren. Ontwikkelen van een API voor efficiënte data-extractie en -beheer. Opzetten van data pipelines voor het automatiseren van gegevensverzameling en -verwerking. Gebruik maken van bestaande ILVO datasets voor aanvullende data.
+  \item \textbf{Deliverable:} Een rijke dataset van videobeelden en sensorgegevens, inclusief reeds verzamelde data van Ilvo.
+\end{itemize}
+\subsection{Technologieën en Technieken}
+\begin{itemize}
+  \item \textbf{Doel:} Het selecteren en integreren van geschikte technologieën voor gedragsanalyse.
+  \item \textbf{Aanpak:} Implementatie of aanpassen computervisie technieken zoals objectdetectie en keypoints-analyse, aangepast aan bestaande modellen en systemen die ILVO mogelijk al heeft ontwikkeld.
+  \item \textbf{Deliverable:} Een geïntegreerd systeem voor het monitoren van koeiengedrag.
+\end{itemize}
+\subsection{Data-analyse en -verwerking}
+\begin{itemize}
+  \item \textbf{Doel:} Uitgebreid analyseren en categoriseren van koeiengedragingen uit de verzamelde data.
+  \item \textbf{Aanpak:} Toepassing van geavanceerde machine learning en patroonherkenning algoritmen voor diepgaande analyse. Deze fase omvat het pre-processen van data, trainen van modellen, en het valideren van resultaten.
+  \item \textbf{Deliverable:} Een uitgebreid analyserapport met gedetailleerde inzichten in koeiengedrag en bewegingspatronen. Deze fase zal de meeste tijd in beslag nemen, gezien de complexiteit van de data en de vereiste nauwkeurigheid van de analyses.
+\end{itemize}
+\subsection{Evaluatie van Technologieën}
+\begin{itemize}
+  \item \textbf{Doel:} Beoordelen van de effectiviteit van de gebruikte technologieën.
+  \item \textbf{Aanpak:} Analyseren van nauwkeurigheid, betrouwbaarheid, en kosteneffectiviteit.
+  \item \textbf{Deliverable:} Evaluatierapport met aanbevelingen voor technologiegebruik in de landbouw.
+\end{itemize}
+\subsection{Uitdagingen en Oplossingen}
+\begin{itemize}
+  \item \textbf{Doel:} Identificeren en aanpakken van mogelijke obstakels in het onderzoek.
+  \item \textbf{Aanpak:} Ontwikkelen van strategieën voor omgevingsvariabelen en technische beperkingen.
+  \item \textbf{Deliverable:} Een document met geïdentificeerde uitdagingen en voorgestelde oplossingen.
+\end{itemize}
+\subsection{Validatie en Verfijning}
+\begin{itemize}
+  \item \textbf{Doel:} Verfijnen van het systeem voor verbeterde nauwkeurigheid.
+  \item \textbf{Aanpak:} Aanpassingen op basis van verzamelde data en feedback.
+  \item \textbf{Deliverable:} Een geoptimaliseerd tracking- en gedragsanalyse systeem.
+\end{itemize}
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
+In dit onderzoek verwachten we de volgende resultaten te verkrijgen:
+\begin{itemize}
+  \item Verbeterde nauwkeurigheid in het monitoren van koeiengedrag door geavanceerde technologieën, zoals objectdetectie en keypoints-analyse, toe te passen.
+  \item Efficiëntere methoden voor gedragsanalyse van koeien in verschillende omgevingsomstandigheden.
+  \item Een geïntegreerd systeem dat zowel de locatie als het gedrag van koeien kan volgen en nauwkeurige gegevens kan genereren.
+\end{itemize}
+Deze resultaten zullen een meerwaarde bieden voor de veehouderij door bij te dragen aan het welzijn van dieren en operationele efficiëntie te verbeteren. Het gebruik van geavanceerde technologieën voor gedragsmonitoring kan leiden tot betere besluitvorming en zorg voor het vee, en uiteindelijk tot positieve economische en ethische gevolgen voor de landbouwsector.
 
-Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
-
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
-
+Het is belangrijk op te merken dat de uiteindelijke resultaten kunnen variëren op basis van de uitkomsten van de data-analyse en evaluatie van de gebruikte technologieën. Dit onderzoek zal een grondige analyse bieden om eventuele afwijkingen te verklaren en aanbevelingen te doen voor verdere verbeteringen.
