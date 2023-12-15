@@ -27,6 +27,7 @@ for latex_file in ${source_files}; do
     -shell-escape \
     -synctex=1 \
     -xelatex \
+    -f \
     "${latex_file}"
   set +x
 done
