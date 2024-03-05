@@ -13,11 +13,11 @@ Dit onderzoek zal niet alleen bijdragen aan de wetenschappelijke kennis over die
 \section{Literatuurstudie}%
 \label{sec:state-of-the-art}
 De technologische vooruitgang in de veehouderij heeft een nieuwe dimensie toegevoegd aan het volgen en analyseren van vee. 
-De integratie van GPS- en RFID-technologieën, zoals onderzocht door \autocite{Nääs2013}\autocite{Akhigbe2021}, heeft de basis gelegd voor efficiëntere trackingmethoden. 
+De integratie van GPS- en RFID-technologieën, zoals onderzocht door \cite{Nääs2013} en \cite{Akhigbe2021}, heeft de basis gelegd voor efficiëntere trackingmethoden. 
 Deze technologieën spelen een cruciale rol in het bieden van inzicht in de bewegingen en het gedrag van vee, wat essentieel is voor het beheer van hun gezondheid en welzijn.
-Ontwikkelingen in computervisie en machine learning hebben nieuwe mogelijkheden geopend voor real-time monitoring en gedragsanalyse, zoals benadrukt door \autocite{Kleanthous2018}. 
+Ontwikkelingen in computervisie en machine learning hebben nieuwe mogelijkheden geopend voor real-time monitoring en gedragsanalyse, zoals benadrukt door \cite{Kleanthous2018}. 
 Geavanceerde technieken zoals objectdetectie en keypoints-analyse bieden gedetailleerde inzichten in het gedrag van vee, wat van groot belang is voor hun welzijnsbeoordeling. 
-De toepassing van 3D-beeldvormings-technologieën, onderzocht \\door \autocite{LeCozler2019}, heeft de precisie in het volgen en analyseren van vee verder verhoogd.
+De toepassing van 3D-beeldvormings-technologieën, onderzocht \\door \cite{LeCozler2019}, heeft de precisie in het volgen en analyseren van vee verder verhoogd.
 Deze methoden stellen ons in staat om gedetailleerde informatie te verzamelen, wat cruciaal is voor het beoordelen van de fysieke gezondheid van het vee.
 Echter brengen deze ontwikkelingen ook uitdagingen met zich mee, zoals het identificeren van gedrag in verschillende omgevingscondities en het handhaven van nauwkeurigheid in complexe landbouwomgevingen \autocite{Narayan2023}\autocite{Busse2015}. 
 Het is belangrijk om een evenwicht te vinden tussen het gebruik van geavanceerde technologieën en het waarborgen van dierenwelzijn en duurzaamheid.
@@ -28,10 +28,10 @@ De integratie van deze technologieën belooft een efficiënte en diergerichte to
 \label{sec:methodologie}
 Fasen van het onderzoek:
 \begin{itemize}
-  \item Fase 1: Literatuurstudie (1 week)
+  \item Fase 1: Literatuurstudie (2 week)
   \item Fase 2: Datacollectie (2 weken)
   \item Fase 3: Technologieën en Technieken (3 weken)
-  \item Fase 4: Data-analyse en -verwerking (4 weken)
+  \item Fase 4: Data-analyse en -verwerking (3 weken)
   \item Fase 5: Integratie en Evaluatie (2 weken)
   \item Fase 6: Conclusie (2 weken)
 \end{itemize}
@@ -41,19 +41,35 @@ De focus ligt op het analyseren van studies over machine learning en computervis
 Hierbij is het doel het identificeren van de meest effectieve methoden en technieken voor gedragsanalyse van vee.
 \end{itemize}
 \subsection{Datacollectie}
-In deze fase wordt real-time gedragsdata van koeien verzameld met behulp van camera's. 
-Het doel is om een efficiënt systeem voor data-extractie en -beheer te ontwikkelen, evenals het opzetten van geautomatiseerde data pipelines. 
-Daarnaast zal onderzocht worden over welke soortgelijke technologieën ILVO reeds beschikt en en of er bestaande ILVO-datasets zijn die gebruikt kunnen worden. 
-Dit zal helpen bij het verrijken en uitbreiden van de verzamelde data.
+In deze fase richt het onderzoek zich op de collectie van real-time gedragsdata van koeien met behulp van camera's. 
+Het doel is om methoden voor data-extractie en -beheer te verkennen en te analyseren. 
+De focus ligt op het opzetten van geautomatiseerde data pipelines, terwijl tegelijkertijd de bestaande technologieën en datasets van ILVO worden onderzocht. 
+Dit onderzoek zal bepalen of en hoe ILVO's huidige middelen kunnen bijdragen aan de verrijking en uitbreiding van de verzamelde data. 
+Elke stap in dit proces zal worden onderbouwd met zorgvuldig onderzoek, om te verzekeren dat de aanpak zowel wetenschappelijk gefundeerd als praktisch haalbaar is.
 \end{itemize}
 \subsection{Technologieën en Technieken}
-Selectie en integratie van de meest geschikte technologieën voor de analyse van koeiengedrag. 
-Dit omvat de aanpassing van bestaande computervisietechnieken zoals objectdetectie en keypoints-analyse.
+De focus van dit onderdeel is de selectie en integratie van de meest geschikte technologieën voor de gedetailleerde analyse van koeiengedrag.
+Dit proces omvat de aanpassing en toepassing van diverse bestaande computervisietechnieken.
+  \begin{itemize}
+    \item Objectdetectie: We zullen geavanceerde object-
+    detectie-algoritmen zoals YOLO, SSD en Faster R-CNN inzetten. Deze technieken zijn cruciaal voor het nauwkeurig identificeren en lokaliseren van koeien binnen videobeelden, wat de basis vormt voor verdere gedragsanalyse.
+    \item Keypoints-analyse: Voor de gedetailleerde analyse van bewegingen en houdingen van koeien, zullen keypoints-analyse technieken zoals OpenPose en AlphaPose worden gebruikt. Deze technieken stellen ons in staat om specifieke punten op het lichaam van de koe te identificeren en te volgen, wat essentieel is voor het begrijpen van hun gedrag.
+    \item Bewegingsanalyse: Door de toepassing van optische stroming en tracking-algoritmen kunnen we de bewegingen van koeien over tijd volgen. Dit helpt ons om patronen in hun beweging te herkennen en te analyseren.
+    \item Gedragsclassificatie: Machine learning en deep learning technieken zullen worden gebruikt voor de classificatie van specifieke gedragingen. Dit stelt ons in staat om verschillende gedragspatronen te identificeren en te categoriseren, van eenvoudige acties tot complexe sociale interacties.
+    \item Anomaliedetectie: Tot slot zullen we anomalie
+    detectie-technieken inzetten om afwijkingen van normaal gedrag te identificeren, wat kan wijzen op gezondheidsproblemen of stress bij de koeien.
+  \end{itemize}
+Deze geïntegreerde aanpak combineert meerdere computervisietechnieken om een uitgebreid en nauwkeurig beeld te krijgen van het gedrag van koeien. De keuze voor specifieke technologieën en de integratiestrategie zal worden onderbouwd door uitgebreid onderzoek en analyse, om de effectiviteit en nauwkeurigheid van de gedragsanalyse te maximaliseren.
 \end{itemize}
 \subsection{Data-analyse en -verwerking}
-Grondige analyse en classificatie van koeiengedrag uit de verzamelde data. 
-Toepassing van geavanceerde machine learning algoritmen en patroonherkenning voor diepgaande analyse. 
-De focus ligt op het voorverwerken van data, het trainen van modellen en het valideren van resultaten.
+In de data-analyse en -verwerkingsfase van de bachelorproef wordt gebruik gemaakt van geavanceerde machine learning algoritmen om koeiengedrag te analyseren en te classificeren.
+De focus ligt op de volgende aspecten:
+  \begin{itemize}
+    \item Selectie van Algoritmen: We zullen specifieke machine learning algoritmen kiezen die het best passen bij onze data en analysebehoeften. Dit kan variëren van Convolutional Neural Networks (CNNs), die effectief zijn voor beeldclassificatie en herkenning, tot Recurrent Neural Networks (RNNs) die geschikt zijn voor het analyseren van tijdsafhankelijke data. Afhankelijk van de complexiteit van de gedragspatronen, kunnen ook eenvoudigere algoritmen zoals Decision Trees of Support Vector Machines (SVMs) worden overwogen.
+    \item Training en Optimalisatie: Zodra de algoritmen zijn geselecteerd, worden deze getraind met de verzamelde data. Dit proces omvat het afstellen van parameters en het toepassen van technieken zoals cross-validation om de effectiviteit van de modellen te maximaliseren.
+    \item Validatie: Na het trainen van de modellen is het essentieel om hun prestaties te testen en valideren met nieuwe, ongeziene data. Dit helpt ons om de nauwkeurigheid en betrouwbaarheid van de modellen te beoordelen.
+  \end{itemize}
+Deze aanpak zorgt ervoor dat we diepgaande en betrouwbare inzichten verkrijgen in koeiengedrag, ondersteund door robuuste data-analyse en \\-verwerkingstechnieken.
 \end{itemize}
 \subsection{Integratie en Evaluatie}
 Implementatie en toetsing van de ontwikkelde technieken en modellen in een realistische landbouwomgeving. 
@@ -72,9 +88,9 @@ In dit onderzoek verwachten we de volgende resultaten te verkrijgen:
 \begin{itemize}
   \item Verbeterde nauwkeurigheid in het monitoren van koeiengedrag door geavanceerde technologieën, zoals objectdetectie en \newline keypoints-analyse, toe te passen.
   \item Efficiëntere methoden voor gedragsanalyse van koeien in verschillende omgevingsomstandigheden.
-  \item Een geïntegreerd systeem dat zowel de locatie als het gedrag van koeien kan volgen en nauwkeurige gegevens kan genereren.
+  \item Geavanceerde Analytische Inzichten: In plaats van een geïntegreerd systeem voor locatie- en gedragsvolging, zal de focus liggen op het ontwikkelen van geavanceerde analytische inzichten die de basis leggen voor toekomstige integratie in dergelijke systemen. Het doel is om diepgaande kennis te verwerven over koeiengedrag, wat cruciaal is voor het ontwerpen van effectieve monitoringssystemen.
 \end{itemize}
 Deze resultaten zullen een meerwaarde bieden voor de veehouderij door bij te dragen aan het welzijn van dieren en de operationele efficiëntie te verbeteren. Het gebruik van geavanceerde technologieën voor gedragsmonitoring kan leiden tot betere besluitvorming en zorg voor het vee, en uiteindelijk tot positieve economische en ethische gevolgen voor de landbouwsector.
 
-Het is belangrijk op te merken dat de uiteindelijke resultaten kunnen variëren op bas
-is van de uitkomsten van de data-analyse en evaluatie van de gebruikte technologieën. Dit onderzoek zal een grondige analyse bieden om eventuele afwijkingen te verklaren en aanbevelingen te doen voor verdere verbeteringen.
+Het is belangrijk op te merken dat de uiteindelijke resultaten kunnen variëren op basis van de uitkomsten van de data-analyse en evaluatie van de gebruikte technologieën. 
+Dit onderzoek zal een grondige analyse bieden om eventuele afwijkingen te verklaren en aanbevelingen te doen voor verdere verbeteringen.
