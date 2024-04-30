@@ -1,0 +1,4 @@
+rcnn: https://www.geeksforgeeks.org/r-cnn-region-based-cnns/
+ssd: https://medium.com/featurepreneur/object-detection-using-single-shot-multibox-detection-ssd-and-opencvs-deep-neural-network-dnn-d983e9d52652
+yolo: https://pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/
+feature_matching: https://hackage.haskell.org/package/opencv-0.0.1.1/src/doc/generated/examples/

@@ -26,5 +26,39 @@
 %% Maak voor elke fase (behalve het literatuuronderzoek) een NIEUW HOOFDSTUK aan
 %% en geef het een gepaste titel.
 
-\lipsum[21-25]
-
+\subsection{Fase 1: datacollectie en labeling}
+\begin{itemize}
+    \item \textbf{Doelstelling:} Het doel van deze fase is om een uitgebreide dataset van beelddata van koeien te verzamelen en te labelen. Deze data zal worden gebruikt voor het trainen van geavanceerde objectdetectiemodellen.
+    \item \textbf{Deliverables:} Een uitgebreide dataset bestaande uit duizenden gelabelde afbeeldingen die verschillende gedragingen van koeien weergeven zoals staan, liggen, en grazen.
+    \item \textbf{Toegepaste Methoden:} Verzamelen van beeldmateriaal, gevolgd door een gedetailleerd labelingsproces om verschillende gedragingen te markeren.
+\end{itemize}
+\subsection{Fase 2: Ontwikkeling en training van objectdetectiemodellen}
+\begin{itemize}
+    \item \textbf{Doelstelling:} Ontwikkelen en trainen van een op maat gemaakt objectdetectiemodel om koeien en hun gedragingen accuraat te identificeren binnen diverse agrarische settings.
+    \item \textbf{Deliverables:} Het gebruik van convolutional neural networks (CNNs) voor het detecteren van specifieke objecten (koeien) in video- of beeldmateriaal. Dit proces omvat de selectie van een geschikt netwerkarchitectuur, zoals YOLO (You Only Look Once) of SSD (Single Shot Detector), die bekend staan om hun snelheid en nauwkeurigheid in real-time objectdetectie.
+    \item \textbf{Toegepaste Methoden:} Een volledig getraind objectdetectiemodel dat in staat is om koeien in verschillende omstandigheden en houdingen te detecteren.
+\end{itemize}
+\subsection{Fase 3: integratie van Voorgetrainde Pose Estimation Modellen}
+\begin{itemize}
+    \item \textbf{Doelstelling:} Integreren van bestaande, voorgetrainde pose estimation modellen om de houdingen van koeien te analyseren, wat bijdraagt aan een dieper begrip van hun gedrag.
+    \item \textbf{Deliverables:}  Implementatie van een voorgetraind pose estimation model, zoals ViTPose of YOLO-pose, die in staat zijn om de pose van een dier uit beeldmateriaal te schatten zonder verdere training. Deze modellen bieden een framework voor het identificeren van sleutelpunten op het lichaam van de koe, wat helpt bij het analyseren van bewegingen en interacties.
+    \item \textbf{Toegepaste Methoden:} Een geïntegreerd systeem dat objectdetectie en pose estimation combineert om gedrag en houdingen van koeien nauwkeurig te identificeren en te catalogiseren.
+\end{itemize}
+\subsection{Fase 4: integratie van localisatie technologieën}
+\begin{itemize}
+    \item \textbf{Doelstelling:} Samenvoegen van de ontwikkelde objectdetectiemodellen met GPS en cameraperspectieftransformatie.
+    \item \textbf{Deliverables:}  Een geïntegreerd systeem dat zowel gedrag detecteert als nauwkeurige locatiegegevens biedt.
+    \item \textbf{Toegepaste Methoden:} Programmeren van scripts voor de integratie van verschillende technologieën en het testen van deze integratie.
+\end{itemize}
+\subsection{Fase 5: integratie van beeld stabilisatie technologieën}
+\begin{itemize}
+    \item \textbf{Doelstelling:} Implementeren van beeldstabilisatie technologieën om kleine bewegingen van de camera te compenseren en de nauwkeurigheid van de locatiegegevens te verbeteren.
+    \item \textbf{Deliverables:} Een geïntegreerd systeem dat beeldstabilisatie toepast om de nauwkeurigheid van de locatiegegevens te verbeteren.
+    \item \textbf{Toegepaste Methoden:} Programmeren van beeldstabilisatie algoritmes en het testen van de effectiviteit van deze technologieën.
+\end{itemize}
+\subsection{Fase 5: Testen en Validatie}
+\begin{itemize}
+    \item \textbf{Doelstelling:} Valideren van de effectiviteit van het geïntegreerde systeem in een agrarische omgeving.
+    \item \textbf{Deliverables:}  Testresultaten en een evaluatierapport dat de prestaties van het systeem in praktijksituaties beschrijft.
+    \item \textbf{Toegepaste Methoden:} Uitvoeren van veldtesten in agrarische settings en het verzamelen van feedback.
+\end{itemize}
