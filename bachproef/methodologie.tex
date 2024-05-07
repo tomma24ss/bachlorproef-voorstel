@@ -25,40 +25,65 @@
 %%
 %% Maak voor elke fase (behalve het literatuuronderzoek) een NIEUW HOOFDSTUK aan
 %% en geef het een gepaste titel.
-
-\subsection{Fase 1: datacollectie en labeling}
+\subsection{Fase 1: Literatuurstudie}
+\begin{itemize}
+\item \textbf{Doelstelling:} Een grondige evaluatie van bestaande literatuur en technologieën om een goed begrip te vormen van de huidige stand van zaken en technologische mogelijkheden.
+\item \textbf{Deliverables:} Een gedetailleerd literatuuronderzoek dat de basis vormt voor de technische keuzes en methodologische aanpak van het project.
+\item \textbf{Toegepaste methoden:} Analyse van academische papers, en bestaande technologische oplossingen in de domeinen van objectdetectie, pose estimation en beeldstabilisatie.
+\end{itemize}
+\subsection{Fase 2: datacollectie en labeling}
 \begin{itemize}
     \item \textbf{Doelstelling:} Het doel van deze fase is om een uitgebreide dataset van beelddata van koeien te verzamelen en te labelen. Deze data zal worden gebruikt voor het trainen van geavanceerde objectdetectiemodellen.
     \item \textbf{Deliverables:} Een uitgebreide dataset bestaande uit duizenden gelabelde afbeeldingen die verschillende gedragingen van koeien weergeven zoals staan, liggen, en grazen.
-    \item \textbf{Toegepaste Methoden:} Verzamelen van beeldmateriaal, gevolgd door een gedetailleerd labelingsproces om verschillende gedragingen te markeren.
+    \item \textbf{Toegepaste methoden:} Verzamelen van beeldmateriaal, gevolgd door een gedetailleerd labelingsproces om verschillende gedragingen te markeren.
 \end{itemize}
-\subsection{Fase 2: Ontwikkeling en training van objectdetectiemodellen}
+\subsection{Fase 3: Ontwikkeling en training van objectdetectiemodellen}
 \begin{itemize}
     \item \textbf{Doelstelling:} Ontwikkelen en trainen van een op maat gemaakt objectdetectiemodel om koeien en hun gedragingen accuraat te identificeren binnen diverse agrarische settings.
     \item \textbf{Deliverables:} Het gebruik van convolutional neural networks (CNNs) voor het detecteren van specifieke objecten (koeien) in video- of beeldmateriaal. Dit proces omvat de selectie van een geschikt netwerkarchitectuur, zoals YOLO (You Only Look Once) of SSD (Single Shot Detector), die bekend staan om hun snelheid en nauwkeurigheid in real-time objectdetectie.
-    \item \textbf{Toegepaste Methoden:} Een volledig getraind objectdetectiemodel dat in staat is om koeien in verschillende omstandigheden en houdingen te detecteren.
+    \item \textbf{Toegepaste methoden:} Een volledig getraind objectdetectiemodel dat in staat is om koeien in verschillende omstandigheden en houdingen te detecteren.
 \end{itemize}
-\subsection{Fase 3: integratie van Voorgetrainde Pose Estimation Modellen}
+\subsection{Fase 4: integratie van voorgetrainde pose estimation modellen}
 \begin{itemize}
     \item \textbf{Doelstelling:} Integreren van bestaande, voorgetrainde pose estimation modellen om de houdingen van koeien te analyseren, wat bijdraagt aan een dieper begrip van hun gedrag.
     \item \textbf{Deliverables:}  Implementatie van een voorgetraind pose estimation model, zoals ViTPose of YOLO-pose, die in staat zijn om de pose van een dier uit beeldmateriaal te schatten zonder verdere training. Deze modellen bieden een framework voor het identificeren van sleutelpunten op het lichaam van de koe, wat helpt bij het analyseren van bewegingen en interacties.
-    \item \textbf{Toegepaste Methoden:} Een geïntegreerd systeem dat objectdetectie en pose estimation combineert om gedrag en houdingen van koeien nauwkeurig te identificeren en te catalogiseren.
+    \item \textbf{Toegepaste methoden:} Een geïntegreerd systeem dat objectdetectie en pose estimation combineert om gedrag en houdingen van koeien nauwkeurig te identificeren en te catalogiseren.
 \end{itemize}
-\subsection{Fase 4: integratie van localisatie technologieën}
+\subsection{Fase 5: integratie van localisatie technologieën}
 \begin{itemize}
     \item \textbf{Doelstelling:} Samenvoegen van de ontwikkelde objectdetectiemodellen met GPS en cameraperspectieftransformatie.
     \item \textbf{Deliverables:}  Een geïntegreerd systeem dat zowel gedrag detecteert als nauwkeurige locatiegegevens biedt.
-    \item \textbf{Toegepaste Methoden:} Programmeren van scripts voor de integratie van verschillende technologieën en het testen van deze integratie.
+    \item \textbf{Toegepaste methoden:} Programmeren van scripts voor de integratie van verschillende technologieën en het testen van deze integratie.
 \end{itemize}
-\subsection{Fase 5: integratie van beeld stabilisatie technologieën}
+\subsection{Fase 6: integratie van beeld stabilisatie technologieën}
 \begin{itemize}
     \item \textbf{Doelstelling:} Implementeren van beeldstabilisatie technologieën om kleine bewegingen van de camera te compenseren en de nauwkeurigheid van de locatiegegevens te verbeteren.
     \item \textbf{Deliverables:} Een geïntegreerd systeem dat beeldstabilisatie toepast om de nauwkeurigheid van de locatiegegevens te verbeteren.
-    \item \textbf{Toegepaste Methoden:} Programmeren van beeldstabilisatie algoritmes en het testen van de effectiviteit van deze technologieën.
+    \item \textbf{Toegepaste methoden:} Programmeren van beeldstabilisatie algoritmes en het testen van de effectiviteit van deze technologieën.
 \end{itemize}
-\subsection{Fase 5: Testen en Validatie}
+\subsection{Fase 7: Resultaten}
 \begin{itemize}
-    \item \textbf{Doelstelling:} Valideren van de effectiviteit van het geïntegreerde systeem in een agrarische omgeving.
-    \item \textbf{Deliverables:}  Testresultaten en een evaluatierapport dat de prestaties van het systeem in praktijksituaties beschrijft.
-    \item \textbf{Toegepaste Methoden:} Uitvoeren van veldtesten in agrarische settings en het verzamelen van feedback.
+\item \textbf{Doelstelling:} Deze samenvatting presenteert de kernresultaten van het onderzoek uitgevoerd in de bachelorproef, gericht op de ontwikkeling van geavanceerde methoden voor de detectie en classificatie van koeiengedrag in een agrarische omgeving.
+
+\item \textbf{Deliverables:} Een uitgebreid rapport inclusief gedetailleerde resultaten van de systeemprestaties, zoals nauwkeurigheid en responsiviteit van de gebruikte modellen (YOLOv8 en ViTPose), gevalideerd door praktijktests en gevisualiseerd via verschillende datarepresentatietechnieken.
+
+\item \textbf{Toegepaste methoden:}
+    \begin{itemize}
+        \item \textbf{Prestatieanalyse van Detectie- en Gedragsclassificatiemodellen:} Evaluatie van de nauwkeurigheid en de verwerkingssnelheid van het YOLOv8-model dat getraind is op de zelfgelabelde dataset. Analyse van de betrouwbaarheid van het ViTPose-model getraind op de APT-36K dataset voor het nauwkeurig voorspellen van skelet-keypoints.
+        \item \textbf{Locatievalidatie:} Accurate bepaling en validatie van GPS-locaties van gedetecteerde koeien via cameraperspectieftransformatie, ondersteund door geavanceerde beeldstabilisatietechnieken om nauwkeurigheid te optimaliseren.
+        \item \textbf{Visuele evaluatie en feedback:} Gebruik van visuele middelen zoals grafieken en tabellen om resultaten te illustreren en de impact van de technologie te demonstreren. Inzameling van feedback van eindgebruikers om de toepasbaarheid en bruikbaarheid in agrarische omgevingen te beoordelen.
+    \end{itemize}
 \end{itemize}
+
+\subsection{Fase 8: Future Research Possibilities}
+\begin{itemize}
+\item \textbf{Doelstelling:} Identificeren van potentiële gebieden voor verdere ontwikkeling en verbetering van de technologie.
+\item \textbf{Deliverables:} Een vooruitblik op toekomstige onderzoeksrichtingen die voortbouwen op de resultaten van het huidige project.
+\item \textbf{Toegepaste methoden:} Trendanalyse, evaluatie van technologische ontwikkelingen, en suggesties voor toekomstige innovaties.
+\end{itemize}
+% \subsection{Fase 6: Testen en validatie}
+% \begin{itemize}
+%     \item \textbf{Doelstelling:} Valideren van de effectiviteit van het geïntegreerde systeem in een agrarische omgeving.
+%     \item \textbf{Deliverables:}  Testresultaten en een evaluatierapport dat de prestaties van het systeem in praktijksituaties beschrijft.
+%     \item \textbf{Toegepaste methoden:} Uitvoeren van veldtesten in agrarische settings en het verzamelen van feedback.
+% \end{itemize}
