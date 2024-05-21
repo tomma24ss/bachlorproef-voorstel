@@ -1,7 +1,7 @@
 \chapter{\IfLanguageName{dutch}{Algemene resultaten}{Results}}%
 \label{ch:resultaten}
 
-\subsection{Doelstelling}
+\section{Doelstelling}
 Deze samenvatting presenteert de kernresultaten van het onderzoek uitgevoerd in de bachelorproef, gericht op de ontwikkeling van geavanceerde methoden voor de detectie en classificatie van koeiengedrag in een agrarische omgeving.
 
 \section{Resultaten}
@@ -19,16 +19,31 @@ Het vermogen van het ViTPose model om geavanceerde analyses van koeiengedrag mog
 98 procent matches tussen pose en classificatie van gedrag. Dit geeft een hoge mate van betrouwbaarheid aan in de voorspellingen van het systeem. 
 Hieruit kan je ook conclusies trekken over de nauwkeurigheid van de pose estimation en de classificatie van gedrag, aangezien deze resultaten sterk overeenkomen.
 \newline
-\includegraphics[width=\linewidth]{resultaten_pose_matches.png}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{resultaten_pose_matches.png}
+  % \caption{Resultaten van vitPose getrained op de apt36-k dataset.}
+  \label{fig:posematches}
+\end{figure}
 \newline
 \subsubsection{Voorbeelden van betere gedragsclassificatie door pose estimation}
 Deze afbeeldingen tonen de verbetering in gedragsclassificatie door de diepere analyse van lichaamshoudingen met de pose estimation. (links = classificatie gedrag, rechts = pose estimation gedrag)
 \newline
-\includegraphics[width=\linewidth]{resultaten_verbetering_pose.png}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{resultaten_verbetering_pose.png}
+  % \caption{Resultaten van vitPose getrained op de apt36-k dataset.}
+  \label{fig:resultaten_verbetering_pose}
+\end{figure}
 \newline
 Deze afbeeldingen illustreren hoe de nauwkeurigheid van gedragsclassificatie afneemt door problemen met pose estimation, zoals een slechte positie van de koe. Mijn oplossing houdt in dat als de betrouwbaarheid van de keypoints te laag is, de voorspelling als onbetrouwbaar wordt beschouwd. In dat geval wordt het pose-gedrag niet voorspeld en blijft de oorspronkelijke gedragsclassificatie behouden.
 \newline
-\includegraphics[width=\linewidth]{resultaten_slechte_pose_gedrag.png}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{resultaten_slechte_pose_gedrag.png}
+  % \caption{Resultaten van vitPose getrained op de apt36-k dataset.}
+  \label{fig:resultaten_slechte_pose_gedrag}  
+\end{figure}
 \newline
 \subsection{Locatiebepaling via Cameraperspectieftransformatie}
 De locatiebepaling van elke koe via cameraperspectieftransformatie vormt een innovatieve uitbreiding van het systeem. Deze techniek, die geavanceerde algoritmen gebruikt om de GPS-locatie van de koe te bepalen op basis van camerabeelden, verhoogt de nauwkeurigheid door integratie van beeldstabilisatietechnieken. Een belangrijk voordeel van deze methode is dat het de noodzaak elimineert om fysieke sensoren of GPS-apparaten direct op de koeien aan te brengen, wat bijdraagt aan een diervriendelijkere benadering van monitoring.
@@ -39,5 +54,10 @@ Door gebruik te maken van deze cameragebaseerde locatiebepaling, kunnen boeren n
 \section{Conclusie}
 De combinatie van deze technologieën biedt een nauwkeurige methode voor het lokaliseren en classificeren van het gedrag van koeien, wat een significante verbetering betekent voor het beheer en de monitoring van vee in de landbouw.
 \newline
-\includegraphics[width=\linewidth]{resultaten_alles.png}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{resultaten_alles.png}
+  \caption{Eindresultaat van de integratie van de verschillende technologieën. De locatiebepaling, gedragsclassificatie en pose estimation worden gecombineerd om een volledig beeld te geven van het koeiengedrag.}
+  \label{fig:resultaten_alles}  
+\end{figure}
 \newline

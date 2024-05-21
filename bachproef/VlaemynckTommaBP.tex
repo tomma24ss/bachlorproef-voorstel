@@ -12,7 +12,7 @@
 %   explicit approval!), remove the option "dutch," or replace with "english".
 
 \usepackage{lipsum} % For blind text, can be removed after adding actual content
-
+\usepackage{float}
 %% Pictures to include in the text can be put in the graphics/ folder
 \graphicspath{{graphics/}}
 
@@ -53,15 +53,15 @@
 %%---------- Document metadata -------------------------------------------------
 % TODO: Replace this with your own information
 \author{Vlaemynck Tomma}
-\supervisor{Dhr. T. Desmedt}
-\cosupervisor{} %niet van toepassing bij mijn bachelorproef
+\supervisor{Dhr. T. Desmedt} 
+\cosupervisor{Dhr. J. Haumont} %niet van toepassing bij mijn bachelorproef
 \title[]%ondertitel ???
     {Tracking van koeien en identificatie van hun gedrag}
 \academicyear{\advance\year by -1 \the\year--\advance\year by 1 \the\year}
-\examperiod{1}
+\examperiod{2}
 \degreesought{\IfLanguageName{dutch}{Professionele bachelor in de toegepaste informatica}{Bachelor of applied computer science}}
 \partialthesis{false} %% To display 'in partial fulfilment'
-%\institution{Internshipcompany BVBA.}
+\institution{Ilvo Vlaanderen.}
 
 %% Add global exceptions to the hyphenation here
 \hyphenation{back-slash}
@@ -180,6 +180,7 @@ Het onderwerp van deze bachelorproef is gebaseerd op een onderzoeksvoorstel dat 
 \backmatter{}
 
 \setlength\bibitemsep{2pt} %% Add Some space between the bibliograpy entries
+% \nocite{keylist}
 \printbibliography[heading=bibintoc]
 
 \end{document}
